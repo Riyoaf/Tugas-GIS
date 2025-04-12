@@ -14,7 +14,9 @@ use App\Http\Controllers\WebController;
 |
 */
 
-Route::get('/', [WebController::class, 'index']);
+// Route::get('/', [WebController::class, 'index']);
+
+Route::get('/', [App\Http\Controllers\WebController::class, 'index']);
 
 Auth::routes();
 
